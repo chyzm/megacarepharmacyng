@@ -703,16 +703,39 @@ footer {
     }
 }
 
+.contact-map {
+    flex: 2;
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .contact-map iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  /* Optional - Mobile adjustments */
+  @media (max-width: 768px) {
 
-@media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
     }
-    
+
+
     .contact-map {
-        min-height: 300px;
+      min-height: 200px;
     }
-}
+  }
+  
+
+
+
 
 /* Brands Slider Styles */
 .brands-section {
