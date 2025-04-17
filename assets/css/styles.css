@@ -770,8 +770,8 @@ footer {
     max-height: 60px;
     width: auto;
     max-width: 150px;
-    filter: grayscale(100%);
-    opacity: 0.7;
+    
+   
     transition: all 0.3s ease;
 }
 
