@@ -273,7 +273,7 @@ nav {
 }
 
 .product-image {
-    height: 200px;
+    min-height: 200px;
     overflow: hidden;
 }
 
@@ -340,6 +340,7 @@ nav {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 
 .about-image img {
     width: 100%;
@@ -618,6 +619,17 @@ footer {
 .social-links a:hover {
     transform: translateY(-5px);
 }
+
+.fa-x-twitter {
+    font-size: inherit; /* or specific size like 1.2em */
+  }
+  
+  /* For SVG version */
+  a svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+  }
 
 .copyright {
     text-align: center;
