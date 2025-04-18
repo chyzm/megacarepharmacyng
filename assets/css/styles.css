@@ -660,6 +660,10 @@ footer {
     .inquiry-container {
         flex-direction: column;
     }
+
+    .inquiry-form{
+        width: 100% ;
+    }
 }
 
 @media (max-width: 768px) {
@@ -721,6 +725,10 @@ footer {
     
     .slide p {
         font-size: 16px;
+    }
+
+    .inquiry-form{
+        width: 100% ;
     }
     
     .whatsapp-float {
