@@ -95,3 +95,67 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Client Reviews Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.slider-prev');
+    const nextBtn = document.querySelector('.slider-next');
+    let currentSlide = 0;
+    
+    // Show first slide
+    showSlide(currentSlide);
+    
+    // Next slide
+    nextBtn.addEventListener('click', function() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    });
+    
+    // Previous slide
+    prevBtn.addEventListener('click', function() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+        showSlide(currentSlide);
+    });
+    
+    // Dot navigation
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+    
+    // Auto slide change every 5 seconds
+    setInterval(function() {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+    }, 5000);
+    
+    // Show slide function
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+        
+        // Remove active class from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+        
+        // Show current slide
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+});
