@@ -452,6 +452,13 @@ nav {
 
 /* Responsive Styles for About and Services Sections */
 @media (max-width: 992px) {
+
+    .product-image {
+        min-height: 100px;
+        overflow: hidden;
+    }
+
+
     .about-container {
         flex-direction: column;
     }
