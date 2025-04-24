@@ -425,6 +425,7 @@ nav {
         border-radius: 0; 
         display: none;
        margin-top: 10px; 
+       margin-left: 10px; /* Additional indentation for sub-menus */
     }
     
     .sub-dropdown.active > .sub-dropdown-menu {
@@ -444,6 +445,15 @@ nav {
         max-height: 300px; /* Set a reasonable max height */
         overflow-y: auto; /* Enable scrolling */
         width: 100%; /* Ensure full width */
+        padding-left: 20px;
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.03); /* Slight background for visibility */
+        border-left: 2px solid var(--primary); /* Visual indicator */
+    }
+
+    .dropdown-menu li a,
+    .sub-dropdown-menu li a {
+        padding: 12px 15px !important; /* More touch-friendly padding */
     }
     
     .dropdown.active > a > i {
