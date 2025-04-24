@@ -25,9 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const inquiryType = document.getElementById('inquiry-type').value;
+        const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
   
-        const whatsappMessage = `Hello MegaCare Pharmacy,%0A%0AMy name is ${name}.%0APhone: ${phone}%0AInquiry Type: ${inquiryType}%0A%0AMessage:%0A${message}`;
+        const whatsappMessage = `Hello MegaCare Pharmacy,%0A%0AMy name is ${name}.%0APhone: ${phone}.%0AEmail: ${email}%0AInquiry Type: ${inquiryType}%0A%0AMessage:%0A${message}`;
   
         window.open(`https://wa.me/2347031016787?text=${whatsappMessage}`, '_blank');
       });
