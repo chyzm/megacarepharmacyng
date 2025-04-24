@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
         const whatsappMessage = `Hello MegaCare Pharmacy,%0A%0AMy name is ${name}.%0APhone: ${phone}.%0AEmail: ${email}%0AInquiry Type: ${inquiryType}%0A%0AMessage:%0A${message}`;
   
-        window.open(`https://wa.me/2347031016787?text=${whatsappMessage}`, '_blank');
+        window.open(`https://wa.me/2348166162631?text=${whatsappMessage}`, '_blank');
       });
     }
   
