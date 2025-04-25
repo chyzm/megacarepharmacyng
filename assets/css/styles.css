@@ -523,16 +523,34 @@ nav {
     opacity: 1;
 }
 
-.slide-content {
+/*.slide-content {
     width: 50%;
     padding: 40px;
-  /*  background: rgba(0, 0, 0, 0.3); */
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     margin-left: 50px;
+    
+} */
+
+.slide-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
 }
 
-h2 {
-    color: hotpink !important;
+.slide-content h2 {
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slide-content .hero-text {
+    color: #FFFFFF;
+}
+
+.btn {
+    background: #2a9d8f; /* Your brand teal */
+    color: white;
 }
 
 .slide h2 {
