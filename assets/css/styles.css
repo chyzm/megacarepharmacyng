@@ -526,7 +526,7 @@ nav {
 .slide-content {
     width: 50%;
     padding: 40px;
-    background: rgba(0, 0, 0, 0.3);
+  /*  background: rgba(0, 0, 0, 0.3); */
     border-radius: 10px;
     margin-left: 50px;
 }
